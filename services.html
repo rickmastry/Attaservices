@@ -27,11 +27,11 @@
                     </li>
                     <li class="dropdown"><a class="navigation-dropdown" href="#">Services</a>
                         <div class="dropdown-content">
-                            <a href="#">Federal/State Income Tax Returns</a>
-                            <a href="#">Sales Tax Returns</a>
-                            <a href="#">Payroll Services</a>
-                            <a href="#">Software Training & Assistance</a>
-                            <a href="#">Bookkeeping</a>
+                            <a href="#federal">Federal/State Income Tax Returns</a>
+                            <a href="#federal">Sales Tax Returns</a>
+                            <a href="#federal">Payroll Services</a>
+                            <a href="#book">Software Training & Assistance</a>
+                            <a href="#book">Bookkeeping</a>
                         </div>
                     </li>
                     <li><a class="navigation" href="#">Resources</a></li>
@@ -43,15 +43,15 @@
          <div id="side-menu" class="side-nav">
             <button class="btn-close">&times</button>
             <a class="side-nav-a" href="index.html">Home</a>
-            <a class="side-nav-a" href="#">About Us</a>
+            <a class="side-nav-a" href="about.html">About Us</a>
             <a class="side-nav-a" id="side-nav-b" href="about.html">Our Firm</a>
             <a class="side-nav-a" id="side-nav-b" href="about.html">Our Mission</a>
             <a class="side-nav-a" >Services</a>
-            <a class="side-nav-a" id="side-nav-b" href="#">Federal/State Income Tax Returns</a>
-            <a class="side-nav-a" id="side-nav-b" href="#">Sales Tax Returns</a>
-            <a class="side-nav-a" id="side-nav-b" href="#">Payroll Services</a>
-            <a class="side-nav-a" id="side-nav-b" href="#">Software Training & Assistance</a>
-            <a class="side-nav-a" id="side-nav-b" href="#">Bookkeeping</a>
+            <a class="side-nav-a" id="side-nav-b" href="#federal">Federal/State Income Tax Returns</a>
+            <a class="side-nav-a" id="side-nav-b" href="#sales">Sales Tax Returns</a>
+            <a class="side-nav-a" id="side-nav-b" href="#payroll">Payroll Services</a>
+            <a class="side-nav-a" id="side-nav-b" href="#book">Software Training & Assistance</a>
+            <a class="side-nav-a" id="side-nav-b" href="#book">Bookkeeping</a>
             <a class="side-nav-a" href="#">Resources</a>
             <a class="side-nav-a" href="#">Contact</a>
          </div>
@@ -70,9 +70,11 @@
              <h1>Services</h1>
             </div>
         </header>
+
         <div class="info-services">
-          <div class="info-container">
-              <div class="info-title"><h1>Federal/State Income Tax Returns</h1></div>
+          <div id="info-container">
+            <div id="federal"></div>
+              <div class="info-title" id="federal"><h1>Federal/State Income Tax Returns</h1></div>
               <div class="img-container-services">
                   <img src="img/tax-3.jpg" alt="Federal/State Income Tax Returns">
                  </div>
@@ -81,8 +83,10 @@
                  <p>We also understand the importance of filing your taxes correctly and on time. Our experts can efficiently prepare your tax return. We can then review what you've done in the past and offer ideas and options to lower your taxes in the future.</p>
                  </div>
               </div>
+        
           <div id="info-container">
-              <div class="info-title"><h1>Sales Tax Returns</h1></div>
+            <div id="sales"></div>
+              <div class="info-title" id="sales"><h1>Sales Tax Returns</h1></div>
               <div class="img-container-services">
                   <img src="img/tax-1.jpg" alt="Sales Tax Returns">
              </div>
@@ -91,10 +95,11 @@
                 <p>At All Things Tax & Accounting, our professionals focus on providing customized solutions by working with your company and uncovering the nuances of your business. We blend your unique situation with our tax and systems knowledge to address your company's specific sales tax issues.
                 </p>
              </div>
-  
-          </div>
+           </div>
+          
           <div id="info-container">
-              <div class="info-title"><h1>Full Payroll Services</h1></div>
+              <div id="payroll"></div>
+              <div class="info-title" ><h1>Full Payroll Services</h1></div>
               <div class="img-container-services">
                   <img src="img/payroll.jpg" alt="Payroll">
              </div>
@@ -103,8 +108,10 @@
              </div>
   
           </div>
+        
           <div id="info-container">
-              <div class="info-title"><h1>Software Training</h1></div>
+            <div id="software"></div>
+              <div class="info-title" id="software"><h1>Software Training</h1></div>
               <div class="img-container-services">
                   <img src="img/Software.jpg" alt="Software Training">
              </div>
@@ -113,8 +120,10 @@
              </div>
   
           </div>
+         
           <div id="info-container">
-              <div class="info-title"><h1>Bookkeeping with or w/0 Tax Preparations</h1></div>
+            <div id="book"></div>
+              <div class="info-title" id="book"><h1>Bookkeeping with or w/0 Tax Preparations</h1></div>
               <div class="img-container-services">
                   <img src="img/book.jpg" alt="Tax Preparations">
              </div>
@@ -125,7 +134,8 @@
   
           </div>
           <div id="info-container">
-              <div class="info-title"><h1>More Services</h1></div>
+            <div id="more"></div>
+              <div class="info-title" id="more"><h1>More Services</h1></div>
               <div class="img-container-services">
                   <img src="img/tax-4.jpg" alt="More Services">
              </div>
