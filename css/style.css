@@ -13,7 +13,7 @@
     --secondaryGrey: rgb(231, 231, 231);
     --mainSpacing: 0.5rem;
     --secondarySpacing: 0.25rem;
-    --mainTransition: all 0.55s ease-in-out;
+    --mainTransition: all 0.4s ease-in-out;
     --mainRed: #751d1d;
     --mainBlue: #1D569C;
     --secondaryBlack: #222;
@@ -34,16 +34,24 @@
       width:240px;
       padding: 10px 10px;
       font-size:20px;
-      background-color: var(--secondaryBlue);
+      background-color: var(--mainRed);
       color:var(--mainWhite);
-      border-color: var(--mainGreen);
+      border-color: var(--mainWhite);
+      border: none;
       outline: none;
       transition: var(--mainTransition);
+      cursor: pointer;
+      border-radius: 20px;
   }
 
   .btn-primary:hover{
-     background-color: var(--mainGreen);
+    background-color: var(--mainBlue);
      transition: var(--mainTransition);
+  }
+
+  .btn-primary a{
+    text-decoration: none;
+    color:#fff;
   }
   
     body {
@@ -60,13 +68,16 @@
     .navbar {
       position: fixed;
       top: 0;
-      height: 90px;
+      /*height: 140px;*/
       width: 100%;
       display: flex;
       align-items: center;
       background: var(--mainBlack);
       border-bottom: 2px solid var(--mainGreen);
       z-index: 2;
+      padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
+      transition: 0.4s ease-in-out; /* Adds a transition effect when the padding is decreased */
+    
       
   }
   
@@ -80,17 +91,17 @@
   }  
   
   .navbar-brand {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     background: url('../img/attalogo-6.png') no-repeat center center; 
     background-size: cover;
     justify-content: space-around;
     color: var(--mainWhite);
     text-decoration: none;
-    font-size:20px;
+    /*font-size:20px;*/
     border: 1px solid white;
     border-radius: 50%;
-    
+    transition: 0.4s ease-in-out; /* Adds a transition effect when the padding is decreased */
   }
 
   
@@ -170,7 +181,7 @@
   text-align: center;
   letter-spacing: 0.1rem;
   overflow:hidden;
-  margin-bottom: 3rem;
+  margin-top: 12rem;
   color: var(--mainWhite);
   font-family: "Source Serif 4";
   font-size: 75px;
@@ -201,6 +212,7 @@
     font-family: 'Source Serif 4', sans-serif;
     font-weight: 300;
     font-size: 30px;
+    transition: 0.4s ease-in-out; /* Adds a transition effect when the padding is decreased */
   }
 
 
@@ -278,7 +290,7 @@
   background-color: var(--thirdRed);
   min-width: 180px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 2;
   opacity:0.8;
 }
 
@@ -383,7 +395,16 @@
     align-content: center;
    
   }
+  .intro-contact {
+    margin-top:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+   
+  }
   .intro-banner {
+    margin-top:200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -411,6 +432,17 @@
     letter-spacing: 0.1rem;
     overflow:hidden;
     color:white;
+    font-size:30px;
+    font-family: 'Source Serif 4', sans-serif;
+  }
+  .banner-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    overflow:hidden;
+    color:black;
     font-size:30px;
     font-family: 'Source Serif 4', sans-serif;
   }
@@ -471,6 +503,15 @@
     flex-direction: row;
     margin-left:150px;
     margin-right:150px;
+  }
+  .info-resources{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left:150px;
+    margin-right:150px;
+    font-family: 'Source Serif 4', sans-serif;
+    font-size:18px;
   }
   .info-services{
     width:100%;
@@ -563,6 +604,215 @@
  .info-container{
     --animate-duration: 2s;
  }
+ .info-container-resources{
+   margin-bottom: 100px;
+  
+ }
+ .info-container-resources-money{
+   margin-bottom: 100px;
+  
+ }
+ .resource-info{
+   color: #fff;
+   font-size:17px;
+ }
+ .resource-info-li{
+   list-style: none;
+   margin:10px;
+   color: #fff;
+ }
+ .money{
+  color:#bb3f3f;
+  text-decoration: none;
+  transition: var(--mainTransition);
+ }
+ .info-container-resources-table{
+   margin-bottom: 100px;
+   color:white;
+ }
+ .info-container-resources p{
+   color:white;
+ }
+ .info-container-resources-table a{
+   color:#bb3f3f;
+   text-decoration: none;
+   transition: var(--mainTransition);
+ }
+ .info-container-resources-table a:hover{
+  color:lightblue;
+   
+ }
+ .money:hover{
+  color:lightblue;
+  
+ }
+thead{
+  color:black;
+  font-size:25px;
+  margin-bottom:10px;
+}
+
+tr{
+  margin-bottom: 10px;
+}
+
+ table {
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  text-align: left;
+}
+
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+table tr {
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.email-container{
+  display:flex;
+  justify-content: space-between;
+}
+
+/*Contact Form*/
+form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  clear:left;
+  
+}
+
+input{
+  width: 300px;
+  height: 30px;
+  font-size: 14px;
+  margin-bottom:10px;
+}
+
+textarea{
+  width: 300px;
+  height: 200px;
+  font-size: 14px;
+}
+
+#textarea h1{
+  font-size: 20px;
+  color:green;
+}
+
+.btn-email{
+  width:240px;
+  padding: 10px 10px;
+  font-size:20px;
+  background-color: var(--mainRed);
+  color:var(--mainWhite);
+  border-color: var(--mainWhite);
+  border: none;
+  outline: none;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top:20px;
+}
+
+.btn-email:hover{
+background-color: var(--mainBlue);
+ transition: var(--mainTransition);
+}
+
+.btn-email a{
+text-decoration: none;
+color:#fff;
+}
+.staff-img{
+  width: 175px;
+  height: 175px;
+  object-fit: contain;
+}
+
+.staff-title{
+  color:var(--mainBlack);
+  font-size:14px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.staff-blog a{
+  text-decoration: none;
+  color: var(--mainRed);
+}
+.staff-blog a:hover{
+  text-decoration: none;
+  color: lightblue;
+  transition: var(--mainTransition);
+}
+
+/*End Contact Form*/
+
+.staff-container{
+  margin:100px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .info-resources {
+    margin-left: 60px;
+    margin-right: 40px;
+}
+  table {
+    border: 0;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: left;
+  }
+
+  
+
+}
+
   /*Footer*/
 footer{
     height:200px;
